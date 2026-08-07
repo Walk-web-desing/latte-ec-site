@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="latte.オンラインショップページ" />
+    <!-- favicon（検索ブラウザ・お気に入り登録の時に表示されるアイコン。） -->
+    <link rel="icon" href="./img/logo/favicon-1024.ico" type="image/png" />
+    <!-- CSS -->
+    <!-- slick 2-->
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <!-- light box -->
+    <link rel="stylesheet" href="./dist/css/lightbox.min.css" />
+    <!-- 制作css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/shop.css" />
+    <!-- Google Fonts -->
+    <!-- "Noto Sans JP" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+    <title>latte.｜やさしい淡色のアパレルブランド</title>
+  </head>
+  <body>
+    <div class="wrapper" id="page-top">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-inner">
+          <a class="header-logo" href="./index.html">
+            <img src="./img/logo/logo-header-2.png" alt="latte.ロゴ" />
+          </a>
+          <!-- ナビゲーションエリア↓ -->
+          <nav class="nav" aria-label="メインナビゲーション">
+            <ul>
+              <li>
+                <button class="search link-nav" type="button">
+                  <img src="./img/icon/search.png" alt="検索" />
+                </button>
+                <form class="search-box">
+                  <input type="text" placeholder="商品を検索..." />
+                </form>
+              </li>
+              <li>
+                <button class="shopping link-nav"><img src="./img/icon/shopping.png" alt="ショッピングカート" /></button>
+              </li>
+              <li>
+                <button class="ham" type="button" aria-label="メニューを開く"><span></span></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="header-nav" aria-label="サブナビゲーション">
+          <ul>
+            <li><a href="./index.html#about">latte.について</a></li>
+            <li><a href="./shop.html">商品はこちら</a></li>
+            <li><a href="./index.html#episode">読み物</a></li>
+            <li><a href="https://www.instagram.com/latte_dot_fashion/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://walk-web-desing.github.io/latte-brand-site/" target="_blank" rel="noopener noreferrer">オフィシャルサイト</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main">
+        <div class="hero">
+          <h1 class="main-title">item lineup</h1>
+        </div>
+        <p class="main-title-2">latte. のアイテムは、どれも“軽さ”を大切にしています。 色も、素材も、シルエットも。<br />そっと寄り添うような淡いトーンで揃えました。</p>
+        <ul class="category">
+          <li><a href="#items" class="link">All</a></li>
+          <li><a href="#wear" class="link">Wear</a></li>
+          <li><a href="#bag" class="link">Bag</a></li>
+          <li><a href="#shoes" class="link">Shoes</a></li>
+          <li><a href="#accessory" class="link">Accessory</a></li>
+        </ul>
+        <section id="items">
+          <div class="item-area">
+            <ul class="item-list" id="wear">
+              <li class="item-card">
+                <a href="./img/shop/Coconut-Latte.png" data-lightbox="items" data-title="Coconut Latte" class="fade-up">
+                  <img src="./img/shop/Coconut-Latte.png" alt="Coconut Latte" class="normal" />
+                  <img src="./img/shop/Coconut-Latte-hover.png" alt="Coconut Latte着用イメージ" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Coconut Latte</h3>
+                  <p class="price">&yen;8,800</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Honey-Latte.png" data-lightbox="items" data-title="Honey Latte" class="fade-up">
+                  <img src="./img/shop/Honey-Latte.png" alt="Honey Latte" class="normal" />
+                  <img src="./img/shop/Honey-Latte-hover.png" alt="Honey Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Honey Latte</h3>
+                  <p class="price">&yen;9,200</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Peach-Latte.png" data-lightbox="items" data-title="Peach Latte" class="fade-up">
+                  <img src="./img/shop/Peach-Latte.png" alt="Peach Latte" class="normal" />
+                  <img src="./img/shop/Peach-Latte-hover.png" alt="Peach Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Peach Latte</h3>
+                  <p class="price">&yen;9,000</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Ichigo-Latte.png" data-lightbox="items" data-title="Ichigo Latte" class="fade-up">
+                  <img src="./img/shop/Ichigo-Latte.png" alt="Ichigo Latte" class="normal" />
+                  <img src="./img/shop/Ichigo-Latte-hover.png" alt="Ichigo Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Ichigo Latte</h3>
+                  <p class="price">&yen;8,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Matcha-Latte.png" data-lightbox="items" data-title="Matcha Latte" class="fade-up">
+                  <img src="./img/shop/Matcha-Latte.png" alt="Matcha Latte" class="normal" />
+                  <img src="./img/shop/Matcha-Latte-hover.png" alt="Matcha Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Matcha Latte</h3>
+                  <p class="price">&yen;8,400</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Blueberry-Latte.png" data-lightbox="items" data-title="Blueberry Latte" class="fade-up">
+                  <img src="./img/shop/Blueberry-Latte.png" alt="Blueberry Latte" class="normal" />
+                  <img src="./img/shop/Blueberry-Latte-hover.png" alt="Blueberry Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Blueberry Latte</h3>
+                  <p class="price">&yen;9,400</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Cafe-Latte.png" data-lightbox="items" data-title="Cafe Latte" class="fade-up">
+                  <img src="./img/shop/Cafe-Latte.png" alt="Cafe Latte" class="normal" />
+                  <img src="./img/shop/Cafe-Latte-hover.png" alt="Cafe Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Cafe Latte</h3>
+                  <p class="price">&yen;7,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Chocolate-Latte.png" data-lightbox="items" data-title="Chocolate Latte" class="fade-up">
+                  <img src="./img/shop/Chocolate-Latte.png" alt="Chocolate Latte" class="normal" />
+                  <img src="./img/shop/Chocolate-Latte-hover.jpg" alt="Chocolate Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Chocolate Latte</h3>
+                  <p class="price">&yen;9,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Hazelnut-Latte.png" data-lightbox="items" data-title="Hazelnut Latte" class="fade-up">
+                  <img src="./img/shop/Hazelnut-Latte.png" alt="Hazelnut Latte" class="normal" />
+                  <img src="./img/shop/Hazelnut-Latte-hover.png" alt="Hazelnut Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Hazelnut Latte</h3>
+                  <p class="price">&yen;8,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Milk-tea-Latte.png" data-lightbox="items" data-title="Milk Tea Latte" class="fade-up">
+                  <img src="./img/shop/Milk-tea-Latte.png" alt="Milk Tea Latte" class="normal" />
+                  <img src="./img/shop/Milk-tea-Latte-hover.png" alt="Milk Tea Latte" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Milk Tea Latte</h3>
+                  <p class="price">&yen;8,600</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/Berry-Mocha.png" data-lightbox="items" data-title="Berry Mocha" class="fade-up">
+                  <img src="./img/shop/Berry-Mocha.png" alt="Berry Mocha" class="normal" />
+                  <img src="./img/shop/Berry-Mocha-hover.png" alt="Berry Mocha" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Berry Mocha</h3>
+                  <p class="price">&yen;9,800</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="item-list" id="bag">
+              <li class="item-card">
+                <a href="./img/shop/item/bag.png" data-lightbox="items" data-title="Cafe Bag" class="fade-up">
+                  <img src="./img/shop/item/bag.png" alt="Cafe Bag" class="normal" />
+                  <img src="./img/shop/item/bag-hover.png" alt="Cafe Bag" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Cafe Bag</h3>
+                  <p class="color-text">color<br />Greige / Camel / Ivory</p>
+                  <p class="price">&yen;6,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="item-list" id="shoes">
+              <li class="item-card">
+                <a href="./img/shop/item/Loafer-Cafe.png" data-lightbox="items" data-title="Cafe Loafer" class="fade-up">
+                  <img src="./img/shop/item/Loafer-Cafe.png" alt="Cafe Loafer" class="normal" />
+                  <img src="./img/shop/item/Loafer-Cafe-hover.png" alt="Cafe Loafer" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Cafe Loafer</h3>
+                  <p class="color-text">color<br />Mocha / Black / Ivory</p>
+                  <p class="price">&yen;8,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/item/Pumps-Latte.png" data-lightbox="items" data-title="Latte Pumps" class="fade-up">
+                  <img src="./img/shop/item/Pumps-Latte.png" alt="Latte Pumps" class="normal" />
+                  <img src="./img/shop/item/Pumps-Latte-hover.png" alt="Latte Pumps" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Latte Pumps</h3>
+                  <p class="color-text">color<br />Ecru / Greige</p>
+                  <p class="price">&yen;7,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="item-list" id="accessory">
+              <li class="item-card">
+                <a href="./img/shop/item/Belt-Butter.png" data-lightbox="items" data-title="Butter Belt" class="fade-up">
+                  <img src="./img/shop/item/Belt-Butter.png" alt="Butter Belt" class="normal" />
+                  <img src="./img/shop/item/Belt-Butter-hover.png" alt="Butter Belt" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Butter Belt</h3>
+                  <p class="price">&yen;3,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/item/Belt-Cream.png" data-lightbox="items" data-title="Cream Belt" class="fade-up">
+                  <img src="./img/shop/item/Belt-Cream.png" alt="Cream Belt" class="normal" />
+                  <img src="./img/shop/item/Belt-Cream-hover.png" alt="Cream Belt" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Cream Belt</h3>
+                  <p class="price">&yen;3,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/item/RingSet-SoftGlow.png" data-lightbox="items" data-title="Soft Glow Ring Set" class="fade-up">
+                  <img src="./img/shop/item/RingSet-SoftGlow.png" alt="Soft Glow Ring Set" class="normal" />
+                  <img src="./img/shop/item/RingSet-SoftGlow-hover.png" alt="Soft Glow Ring Set" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Soft Glow Ring Set</h3>
+                  <p class="price">&yen;2,700</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+              <li class="item-card">
+                <a href="./img/shop/item/Necklace-MorningPearl.png" data-lightbox="items" data-title="Morning Pearl Necklace" class="fade-up">
+                  <img src="./img/shop/item/Necklace-MorningPearl.png" alt="Morning Pearl Necklace" class="normal" />
+                  <img src="./img/shop/item/Necklace-Morning-hover.png" alt="Morning Pearl Necklace" class="hover" />
+                </a>
+                <div class="caption">
+                  <h3>Morning Pearl Necklace</h3>
+                  <p class="price">&yen;2,900</p>
+                  <button class="btn">カートに入れる</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <a class="page-top" href="#page-top">top</a>
+        <div class="footer-main">
+          <a class="footer-logo" href="index.html">
+            <img src="./img/logo/logo-header-2.png" alt="latte.ロゴ" />
+          </a>
+          <div class="footer-link">
+            <a class="instagram" href="https://www.instagram.com/latte_dot_fashion/" target="_blank" rel="noopener noreferrer">
+              <img src="./img/icon/Instagram.png" alt="latte.のInstagram" />
+            </a>
+            <a class="mail" href="mailto:info@latte-fashion.com">
+              <img src="./img/icon/mail.png" alt="メールでお問い合わせ" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">特定商取引法に基づく表記</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">利用規約</a></li>
+            <li>&copy;2026 latte.</li>
+          </ul>
+        </div>
+      </footer>
+      <!-- JavaScript -->
+      <!-- cdn -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <!-- slick -->
+      <script src="./slick/slick.min.js"></script>
+      <!-- light box -->
+      <script src="./dist/js/lightbox.min.js"></script>
+      <!-- 制作js -->
+      <script src="./js/common.js"></script>
+    </div>
+  </body>
+</html>

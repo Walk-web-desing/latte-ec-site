@@ -1,0 +1,196 @@
+/* ========
+   shop CSS
+==========*/
+@charset "utf-8";
+.hero {
+  height: 700px;
+  background: url(../img/shop/shop-hero.png) no-repeat center/cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35);
+}
+.hero h1 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: var(--latte-bg);
+}
+.main-title-2 {
+  text-align: center;
+  width: 100%;
+}
+/* 上部カテゴリ */
+.category {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto 50px;
+}
+.category li a {
+  display: block;
+  padding: 20px 30px;
+}
+/* アイテム */
+.item-area {
+  width: 90%;
+  margin: 0 auto 200px;
+}
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-bottom: 40px;
+}
+.item-card {
+  transition: 0.3s ease;
+}
+.item-card:hover {
+  transform: translateY(-5px);
+}
+.item-card a {
+  display: block;
+  position: relative;
+}
+.item-card a img {
+  transition: 0.4s ease;
+}
+.item-card h3 {
+  padding-top: 30px;
+}
+.item-card p {
+  padding-block: 15px;
+}
+.item-card img {
+  width: 340px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.item-area .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.item-area a:hover .normal {
+  opacity: 0;
+}
+.item-area a:hover .hover {
+  opacity: 1;
+  transform: translateY(-8px) scale(1.02);
+}
+.caption {
+  width: 340px;
+  aspect-ratio: 2 / 1;
+  background: var(--latte-res-nav);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+.price {
+  width: 80%;
+  text-align: right;
+  padding-top: 0;
+  margin-block: 0;
+}
+.caption h3 {
+  padding-top: 20px;
+}
+@media (max-width: 900px) {
+  .hero {
+    height: 600px;
+  }
+  .main-title-2 {
+    font-size: 1rem;
+  }
+  /* アイテム */
+  .item-area {
+    width: 90%;
+    margin: 0 auto 200px;
+  }
+  .item-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 15px;
+  }
+  .item-card{
+  width:180px;
+}
+.item-card img,
+.caption{
+  width:100%;
+}
+  .caption {
+    height: 235px;
+  }
+  #wear .caption {
+    height: 160px;
+  }
+  #accessory .caption {
+    height: 185px;
+  }
+  .caption h3 {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .caption p {
+    margin: 0;
+  }
+  .color-text {
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin-block: 0;
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    height: 550px;
+    background: url(../img/media/shop-hero.png) no-repeat center/cover;
+  }
+  .hero h1 {
+    color: var(--latte-text);
+  }
+  .main-title-2 {
+    font-size: 0.9rem;
+  }
+  /* 上部カテゴリ */
+  .category {
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 0;
+    margin: 0 auto 30px;
+  }
+  /* アイテム */
+  .item-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .caption {
+    height: 180px;
+  }
+  #shoes .caption,
+  #bag .caption {
+    height: 245px;
+  }
+  .caption h3 {
+    padding-top: 20px;
+    margin: 0;
+  }
+  .caption p {
+    margin: 0;
+  }
+}
+@media (max-width: 430px) {
+  .hero {
+    height: 480px;
+  }
+  /* 上部カテゴリ */
+  .category {
+    column-gap: 15px;
+  }
+}

@@ -1,0 +1,518 @@
+/* ============
+   index CSS
+=============== */
+@charset "utf-8";
+.hero {
+  height: 700px;
+  background: url(../img/index/index-hero-1.png) no-repeat center/cover;
+  animation: slide 12s infinite;
+}
+@keyframes slide {
+  0% {
+    background: url(../img/index/index-hero-1.png) no-repeat center/cover;
+  }
+  33% {
+    background: url(../img/index/index-hero-2.png) no-repeat center/cover;
+  }
+  66% {
+    background: url(../img/index/index-hero-3.png) no-repeat center/cover;
+  }
+  100% {
+    background: url(../img/index/index-hero-4.png) no-repeat center/cover;
+  }
+}
+.hero h1 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+.main-title {
+  margin-bottom: 20px;
+}
+.hero h2 {
+  position: absolute;
+  top: 380px;
+  left: 80px;
+}
+/* お知らせ */
+.notice {
+  width: 60%;
+  margin: 50px auto 100px;
+  background: var(--latte-footer);
+  border-radius: 20px;
+}
+.notice-link {
+  display: flex;
+  flex-direction: column;
+}
+.notice a {
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 380px;
+  left: 15%;
+}
+.notice a:last-child {
+  margin-bottom: 30px;
+}
+/* 人気商品 */
+.ranking {
+  width: 80%;
+  display: flex;
+  margin: 0 auto 20px;
+  justify-content: space-around;
+}
+.ranking .link {
+  font-size: 1.25rem;
+}
+.popularity {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 200px;
+}
+.popularity img {
+  width: 345px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.popularity a {
+  display: block;
+  position: relative;
+}
+.popularity a img {
+  transition: 0.4s ease;
+}
+.popularity .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.popularity a:hover .normal {
+  opacity: 0;
+}
+.popularity a:hover .hover {
+  opacity: 1;
+  transform: translateY(-8px) scale(1.03);
+}
+.no1 img {
+  object-position: top;
+}
+.caption {
+  width: 345px;
+  aspect-ratio: 1 / 1;
+  background: var(--latte-res-nav);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+.reverse {
+  width: 80%;
+  text-align: right;
+}
+.caption h3 {
+  padding-top: 20px;
+}
+.caption p {
+  padding-top: 0;
+  margin-block: 0;
+}
+.no1,
+.no2,
+.no3 {
+  position: relative;
+}
+.no1 > img:first-child,
+.no2 > img:first-child,
+.no3 > img:first-child {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 70px;
+  z-index: 10;
+}
+/* latte.について */
+.about {
+  width: 100%;
+  height: 600px;
+  background: url(../img/index/index-about-hero.png) no-repeat center/cover;
+  position: relative;
+}
+.about-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.about-sub {
+  font-size: 2.4rem;
+}
+.about-sub-1,
+.bg-circle {
+  font-size: 1.3rem;
+}
+.about-link {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.4s ease;
+}
+.about-link:hover {
+  transform: translateY(-5px);
+}
+.about-link a {
+  display: inline-block;
+  width: 200px;
+}
+.arrow {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 9999px;
+  background-color: var(--latte-text);
+  z-index: 2;
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  width: 35px;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: var(--latte-text);
+  transform: rotate(45deg);
+  transform-origin: calc(100% - 2px) 50%;
+  z-index: 2;
+}
+.bg-circle {
+  position: relative;
+  z-index: 1;
+}
+.bg-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: var(--latte-header);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* 読み物 */
+.episode {
+  width: 55%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.episode-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.episode-link a {
+  width: 600px;
+}
+/* オフィシャルサイトとInstagramの紹介 */
+.site-sns {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  text-align: center;
+}
+.site,
+.sns {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.site h2,
+.sns h2 {
+  margin-block: 20px;
+}
+.circle {
+  position: relative;
+  z-index: 1;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 270px;
+  background: var(--latte-footer);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* ページ下部のアイテムリンク */
+.item-link {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-evenly;
+}
+@media (max-width: 900px) {
+  .hero {
+    height: 660px;
+  }
+  .hero h1 {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+  }
+  .hero h2 {
+    position: absolute;
+    top: 290px;
+    left: 40px;
+  }
+  /* お知らせ */
+  .notice {
+    width: 90%;
+    margin: 50px auto 80px;
+  }
+  .notice h2 {
+    font-size: 1.4rem;
+  }
+  .notice a {
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+    left: 10%;
+  }
+  .notice a:last-child {
+    margin-bottom: 30px;
+  }
+  /* 人気商品 */
+  .ranking {
+    width: 90%;
+  }
+  .ranking h2 {
+    font-size: 1.25rem;
+  }
+  .ranking .link {
+    font-size: 1.2rem;
+  }
+  .popularity img {
+    width: 275px;
+  }
+  .caption {
+    width: 275px;
+    aspect-ratio: 3 / 2;
+  }
+  .caption h3 {
+    padding-top: 5px;
+    font-size: 1.15rem;
+  }
+  .reverse {
+    width: 70%;
+  }
+  .caption p {
+    font-size: 0.8rem;
+  }
+  /* latte.について */
+  .about {
+    height: 400px;
+  }
+  .about-sub {
+    font-size: 1.8rem;
+  }
+  .about-sub-1,
+  .bg-circle {
+    font-size: 0.9rem;
+  }
+  .about-link {
+    top: 60%;
+    left: 65%;
+  }
+  .about-link a {
+    width: 150px;
+  }
+  .arrow {
+    width: 100px;
+    height: 2px;
+    margin: 15px;
+  }
+  .arrow::before {
+    width: 20px;
+    height: 2px;
+  }
+  .bg-circle::before {
+    top: 100%;
+    left: 40%;
+    width: 140px;
+    height: 140px;
+  }
+  /* 読み物 */
+  .episode {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .episode-link {
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+  .episode-link a {
+    width: min(100%, 450px);
+  }
+  /* オフィシャルサイトとInstagramの紹介 */
+  .site,
+  .sns {
+    width: 100px;
+    height: 100px;
+  }
+  .site h2,
+  .sns h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .site a,
+  .sns a {
+    width: 170px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .circle::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+  }
+  /* ページ下部のアイテムリンク */
+  .item-link {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    height: 550px;
+  }
+  /* 人気商品 */
+  .ranking {
+    width: 80%;
+  }
+  .ranking .link {
+    font-size: 0.9rem;
+  }
+  .popularity {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .popularity img {
+    width: 340px;
+  }
+  .caption {
+    width: 340px;
+    aspect-ratio: 3 / 2;
+  }
+  .caption h3 {
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+  .reverse {
+    width: 70%;
+  }
+  .caption p {
+    font-size: 0.9rem;
+  }
+  /* latte.について */
+  .about {
+    background: url(../img/media/index-about.png) no-repeat right/cover;
+    position: relative;
+  }
+  .about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.25);
+  }
+  .about-text {
+    top: 35%;
+    left: 35%;
+  }
+  .about-sub {
+    font-size: 1.5rem;
+  }
+  /* 読み物 */
+  .episode-title h2 {
+    padding: 0;
+  }
+  .episode {
+    width: 90%;
+  }
+  .episode-link {
+    gap: 2px;
+    font-size: 0.8rem;
+  }
+  .episode-link a {
+    width: min(100%, 350px);
+    padding: 10px 0 10px 30px;
+  }
+  /* オフィシャルサイトとInstagramの紹介 */
+  .site-sns {
+    width: 90%;
+    margin: 80px auto;
+    gap: 100px;
+  }
+  .site a,
+  .sns a {
+    width: 135px;
+    font-size: 0.85rem;
+    padding: 2px 6px;
+  }
+  .circle::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 430px) {
+  .hero {
+    height: 480px;
+    background: url(../img/media/index-hero.png) no-repeat center/cover;
+  }
+  @keyframes slide {
+    0% {
+      background: url(../img/media/index-hero.png) no-repeat center/cover;
+    }
+    33% {
+      background: url(../img/media/index-hero-2.png) no-repeat center/cover;
+    }
+    66% {
+      background: url(../img/media/index-hero-3.png) no-repeat center/cover;
+    }
+    100% {
+      background: url(../img/media/index-hero-4.png) no-repeat center/cover;
+    }
+  }
+  /* latte.について */
+  .about-sub {
+    font-size: 1.2rem;
+  }
+  /* 読み物 */
+  .episode {
+    width: 80%;
+  }
+}
